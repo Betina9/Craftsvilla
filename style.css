@@ -10,11 +10,12 @@ header {
   align-items: center;
   gap: 350px;
   width: 100%;
+  height: 90px;
 }
 
 #logo {
   width: 120px;
-  margin-top: 20px;
+  margin-top: 5px;
 }
 
 .navbar {
@@ -36,16 +37,28 @@ header {
   background-color: #bff3f7;
 }
 
+.hamburger {
+  font-size: 24px;
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger {
+    display: block;
+  }
+
 main {
   background-color: #f3f7f9;
   text-align: center;
+  flex: 1;
 }
 
 .kort-seksjon {
   display: flex;
   justify-content: center;
   gap: 30px;
-  margin: 50px auto;
+  margin: 35px auto;
+  padding-bottom: 20px;
   flex-wrap: wrap;
   max-width: 1000px;
 }
@@ -162,3 +175,34 @@ input[type="email"] {
 .pris:hover {
   background-color: #f3a756;
 }
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+footer {
+  background-color: #f7a9a8;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+.footer-link {
+  color: black;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    top: 70px;
+    right: 30px;
+    background-color: #4cb7a5;
+    padding: 20px;
+    border-radius: 8px;
+  }
