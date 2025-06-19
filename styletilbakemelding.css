@@ -73,6 +73,74 @@ header {
   margin: 0;
 }
 
+main {
+  max-width: 900px;
+  margin: auto;
+  padding: 30px;
+}
+
+.tilbakemelding-form {
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  margin-bottom: 40px;
+}
+
+.tilbakemelding-form h1 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input,
+select,
+textarea {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  resize: vertical;
+}
+
+button {
+  background-color: #4cb7a5;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 12px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #3a9f8b;
+}
+
+.anmeldelser {
+  padding: 20px;
+  background-color: #eafff5;
+  border-radius: 10px;
+}
+
+.anmeldelser h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.anmeldelse {
+  background-color: white;
+  padding: 15px;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
 footer {
   background-color: #f7a9a8;
   text-align: center;

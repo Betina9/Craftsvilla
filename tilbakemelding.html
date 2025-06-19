@@ -26,121 +26,60 @@
       <div class="hamburger" id="hamburger">☰</div>
     </header>
     <div class="wrapper">
+      <div>
+        <div class="seksjon-tittel">
+          <h1>Tilbakemeldinger</h1>
+        </div>
+      </div>
       <main>
-        <div class="skjema-container">
-          <h2>Takk for at du deltok på vår Akvarellworkshop!</h2>
-          <p class="intro">
-            Vi håper du hadde en inspirerende og avslappende opplevelse.<br />
-            Vi setter stor pris på at du tar deg et par minutter til å gi oss
-            tilbakemelding - det hjelper oss å bli bedre og skape enda
-            hyggeligere workshops fremover.
-          </p>
+        <section class="tilbakemelding-form">
+          <h1>Del din opplevelse</h1>
+          <p>Vi setter stor pris på at du deler dine erfaringer med oss!</p>
 
           <form>
-            <div class="spm">
-              <p>1. Hvordan vil du vurdere opplevelsen totalt?</p>
-              <label
-                ><input
-                  type="checkbox"
-                  name="opplevelse"
-                  value="fantastisk"
-                />Fantastisk</label
-              >
-              <label
-                ><input
-                  type="checkbox"
-                  name="opplevelse"
-                  value="veldig_bra"
-                />Veldig bra</label
-              >
-              <label
-                ><input
-                  type="checkbox"
-                  name="opplevelse"
-                  value="helt_grei"
-                />Helt grei</label
-              >
-              <label
-                ><input
-                  type="checkbox"
-                  name="opplevelse"
-                  value="kunne_vaert_bedre"
-                />Kunne vært bedre</label
-              >
-              <label
-                ><input
-                  type="checkbox"
-                  name="opplevelse"
-                  value="darlig"
-                />Dårlig</label
-              >
-            </div>
+            <label for="navn">Navn:</label>
+            <input type="text" id="navn" placeholder="Ditt navn" />
 
-            <div class="spm">
-              <p>2. Hva likte du best med workshopen?</p>
-              <textarea name="beste_del" placeholder="Skriv her..."></textarea>
-            </div>
+            <label for="kunstform">Kunstform:</label>
+            <select id="kunstform">
+              <option>Velg kunstform</option>
+              <option>Mosaikk kunst</option>
+              <option>Akvarellmaling</option>
+              <option>Lerretsmaling</option>
+            </select>
 
-            <div class="spm">
-              <p>3. Hva kunne vært gjort annerledes?</p>
-              <textarea name="forslag" placeholder="Skriv her..."></textarea>
-            </div>
+            <label for="kommentarfelt">Din tilbakemelding:</label>
+            <textarea
+              id="kommentarfelt"
+              rows="5"
+              placeholder="Hvordan var opplevelsen?"
+            ></textarea>
 
-            <div class="spm">
-              <p>
-                4. Var det noe som overrasket deg – positivt eller negativt?
-              </p>
-              <textarea
-                name="overraskelse"
-                placeholder="Skriv her..."
-              ></textarea>
-            </div>
-
-            <div class="spm">
-              <p>5. Vil du anbefale denne workshopen til andre?</p>
-              <label
-                ><input type="checkbox" name="anbefaling" value="ja" />Ja</label
-              >
-              <label
-                ><input
-                  type="checkbox"
-                  name="anbefaling"
-                  value="nei"
-                />Nei</label
-              >
-              <label
-                ><input
-                  type="checkbox"
-                  name="anbefaling"
-                  value="usikker"
-                />Usikker</label
-              >
-            </div>
-
-            <div class="spm">
-              <p>6. Har du lyst til å bli med igjen?</p>
-              <label
-                ><input type="checkbox" name="tilbake" value="ja_varsel" />Ja –
-                gi meg beskjed når det kommer nye</label
-              >
-              <label
-                ><input
-                  type="checkbox"
-                  name="tilbake"
-                  value="kanskje"
-                />Kanskje</label
-              >
-              <label
-                ><input type="checkbox" name="tilbake" value="nei_takk" />Nei
-                takk</label
-              >
-            </div>
-
-            <div class="submit-knapp">
-              <button type="submit">Send tilbakemelding</button>
-            </div>
+            <button type="submit">Send inn</button>
           </form>
-        </div>
+        </section>
+
+        <section class="anmeldelser">
+          <h2>Tidligere tilbakemeldinger</h2>
+          <div class="anmeldelse">
+            <p><strong>Navn:</strong> Liv H.</p>
+            <p><strong>Kunstform:</strong> Mosaikk</p>
+            <p>
+              <strong>Opplevelse:</strong> Jeg deltok sammen med barnebarna, og
+              vi hadde det helt fantastisk! God veiledning og hyggelig
+              atmosfære.
+            </p>
+          </div>
+
+          <div class="anmeldelse">
+            <p><strong>Navn:</strong> Amir K.</p>
+            <p><strong>Kunstform:</strong> Akvarell</p>
+            <p>
+              <strong>Opplevelse:</strong> Jeg og min samboer hadde en kreativ
+              date-night. Anbefales!
+            </p>
+          </div>
+        </section>
       </main>
       <footer>
         <p>
