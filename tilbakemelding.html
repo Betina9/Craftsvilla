@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Craftsvilla</title>
+  </head>
+  <body>
+    <header>
+      <img src="Images/Craftsvilla Logo.png" alt="Craftsvilla logo" />
+      <nav class="navbar">
+        <ul>
+          <li><a href="index.html">Hjemmeside</a></li>
+          <li><a href="booking.html">Booking</a></li>
+          <li><a href="tilbakemelding.html">Tilbakemelding</a></li>
+          <li><a href="galleri.html">Galleri</a></li>
+        </ul>
+      </nav>
+      <div class="hamburger" id="hamburger">☰</div>
+    </header>
+    <main>
+      <div class="skjema-container">
+        <h2>Takk for at du deltok på vår Akvarellworkshop!</h2>
+        <p class="intro">
+          Vi håper du hadde en inspirerende og avslappende opplevelse.<br />
+          Vi setter stor pris på at du tar deg et par minutter til å gi oss
+          tilbakemelding - det hjelper oss å bli bedre og skape enda hyggeligere
+          workshops fremover.
+        </p>
+
+        <form>
+          <div class="spm">
+            <p>1. Hvordan vil du vurdere opplevelsen totalt?</p>
+            <label
+              ><input
+                type="checkbox"
+                name="opplevelse"
+                value="fantastisk"
+              />Fantastisk</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                name="opplevelse"
+                value="veldig_bra"
+              />Veldig bra</label
+            >
+            <label
+              ><input type="checkbox" name="opplevelse" value="helt_grei" />Helt
+              grei</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                name="opplevelse"
+                value="kunne_vaert_bedre"
+              />Kunne vært bedre</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                name="opplevelse"
+                value="darlig"
+              />Dårlig</label
+            >
+          </div>
+
+          <div class="spm">
+            <p>2. Hva likte du best med workshopen?</p>
+            <textarea name="beste_del" placeholder="Skriv her..."></textarea>
+          </div>
+
+          <div class="spm">
+            <p>3. Hva kunne vært gjort annerledes?</p>
+            <textarea name="forslag" placeholder="Skriv her..."></textarea>
+          </div>
+
+          <div class="spm">
+            <p>4. Var det noe som overrasket deg – positivt eller negativt?</p>
+            <textarea name="overraskelse" placeholder="Skriv her..."></textarea>
+          </div>
+
+          <div class="spm">
+            <p>5. Vil du anbefale denne workshopen til andre?</p>
+            <label
+              ><input type="checkbox" name="anbefaling" value="ja" />Ja</label
+            >
+            <label
+              ><input type="checkbox" name="anbefaling" value="nei" />Nei</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                name="anbefaling"
+                value="usikker"
+              />Usikker</label
+            >
+          </div>
+
+          <div class="spm">
+            <p>6. Har du lyst til å bli med igjen?</p>
+            <label
+              ><input type="checkbox" name="tilbake" value="ja_varsel" />Ja – gi
+              meg beskjed når det kommer nye</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                name="tilbake"
+                value="kanskje"
+              />Kanskje</label
+            >
+            <label
+              ><input type="checkbox" name="tilbake" value="nei_takk" />Nei
+              takk</label
+            >
+          </div>
+
+          <div class="submit-knapp">
+            <button type="submit">Send tilbakemelding</button>
+          </div>
+        </form>
+      </div>
+    </main>
+    <footer>
+      <p>
+        Developed by Betina | Brukervilkår og personvern | Informasjonskapsler
+      </p>
+    </footer>
+  </body>
+</html>

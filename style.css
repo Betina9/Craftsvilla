@@ -1,0 +1,88 @@
+.seksjon-tittel {
+  background-color: #0077cc;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  width: 100%;
+}
+
+.seksjon-tittel h1 {
+  margin: 0;
+  font-size: 28px;
+}
+.skjema-container {
+  background-color: white;
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+}
+
+h1 {
+  font-size: 24px;
+  padding: 5px;
+}
+
+em {
+  display: block;
+  font-style: italic;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-top: 15px;
+}
+
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  box-sizing: border-box;
+  border: 1px solid #999;
+  border-radius: 4px;
+}
+
+.valgseksjon {
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.valgseksjon label {
+  font-weight: normal;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.valgseksjon input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.info-boks {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #eaf7ff;
+  font-weight: bold;
+}
+
+button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: orange;
+  color: black;
+  border: 1px solid #999;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: darkorange;
+}
