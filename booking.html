@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="stylebooking.css"/>
     <title>Craftsvilla</title>
   </head>
   <body>
@@ -25,66 +25,47 @@
       </nav>
       <div class="hamburger" id="hamburger">☰</div>
     </header>
+    <div class="wrapper">
     <main>
       <div class="seksjon-tittel">
-        <h1>Booking</h1>
+        <h1>Book en workshop</h1>
       </div>
-      <div class="skjema-container">
-        <h1>Kunstworkshop – booking</h1>
-        <em
-          >En kreativ og sosial workshop som fremmer samhold og avslapping for
-          foreldre, barn, venner, kollegaer og flere.</em
-        >
+      <div class="container">
 
-        <form>
-          <label for="navn">Fullt navn:</label>
-          <input type="text" id="navn" name="navn" placeholder="Ola Nordmann" />
+    <label for="artform">Velg kunstform:</label>
+    <select id="artform" onchange="updatePrice()">
+      <option value="">-- Velg kunstform --</option>
+      <option value="Mosaikk kunst" data-price="400">Mosaikk kunst</option>
+      <option value="Akvarellmaling" data-price="200">Akvarellmaling</option>
+      <option value="Lerretsmaling" data-price="300">Lerretsmaling</option>
+    </select>
 
-          <label for="epost">Epost adresse:</label>
-          <input
-            type="email"
-            id="epost"
-            name="epost"
-            placeholder="ola_nordmann@outlook.com"
-          />
+    <label for="bookingtime">Velg tidspunkt:</label>
+    <input type="datetime-local" id="bookingtime"/>
 
-          <div class="valgseksjon">
-            <p><strong>Velg kunstform:</strong></p>
+    <div id="price" class="price-box" style="display: none;"></div>
 
-            <label>
-              <input type="checkbox" name="kunstform" value="mosaikk" />
-              Mosaikk kunst, 400 kr<br />
-              <small
-                >Sett inkluderer: Ramme, A4 størrelse treplate, små fargede
-                steiner, gummi.</small
-              >
-            </label>
+    <button>Book nå</button>
 
-            <label>
-              <input type="checkbox" name="kunstform" value="akvarell" />
-              Akvarellmaling, 200 kr<br />
-              <small
-                >Sett inkluderer: Ramme, akvarellpapir med designmal,
-                akvarellfarger, pensler.</small
-              >
-            </label>
+    <!-- Google Kalender (valgfritt – legg inn din ID) -->
+    <iframe src="https://calendar.google.com/calendar/embed?src=din_kalender_id_her&ctz=Europe%2FOslo"></iframe>
+  </div>
 
-            <label>
-              <input type="checkbox" name="kunstform" value="lerret" />
-              Lerretsmaling, 300 kr<br />
-              <small
-                >Sett inkluderer: Ramme, akrylpapir med designmal, akrylfarger,
-                pensler.</small
-              >
-            </label>
-          </div>
+  <script>
+    function updatePrice() {
+      const select = document.getElementById("artform");
+      const priceBox = document.getElementById("price");
+      const selected = select.options[select.selectedIndex];
+      const price = selected.getAttribute("data-price");
 
-          <div class="info-boks">Kun 20 plasser – meld deg på i dag!</div>
-
-          <button type="submit">Meld deg på</button>
-        </form>
-      </div>
-    </main>
+      if (price) {
+        priceBox.textContent = `Pris: ${price} kr`;
+        priceBox.style.display = 'block';
+      } else {
+        priceBox.style.display = 'none';
+      }
+    }
+  </script>
     <footer>
       <p>
         Developed by Betina |
@@ -92,5 +73,6 @@
         <a href="#" class="footer-link">Informasjonskapsler</a>
       </p>
     </footer>
+    </div>
   </body>
 </html>

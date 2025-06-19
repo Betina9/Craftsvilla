@@ -44,8 +44,8 @@ header {
 }
 
 .hamburger {
-    display: block;
-  }
+  display: block;
+}
 
 main {
   background-color: #f3f7f9;
@@ -88,8 +88,8 @@ main {
 }
 
 .seksjon-tittel {
-  background-color: #73DF56;
-  color: #2E2E2E;
+  background-color: #73df56;
+  color: #2e2e2e;
   padding: 10px 0;
   text-align: center;
   width: 100%;
@@ -97,7 +97,7 @@ main {
 
 .seksjon-tittel h1 {
   font-size: 28px;
-    margin: 0;
+  margin: 0;
 }
 .skjema-container {
   background-color: white;
@@ -185,7 +185,7 @@ input[type="email"] {
 footer {
   background-color: #f7a9a8;
   text-align: center;
-  position: fixed;
+  padding: 20px;
   bottom: 0;
   left: 0;
   width: 100%;
@@ -194,15 +194,7 @@ footer {
   color: black;
 }
 
-@media (max-width: 768px) {
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    gap: 10px;
-    position: absolute;
-    top: 70px;
-    right: 30px;
-    background-color: #4cb7a5;
-    padding: 20px;
-    border-radius: 8px;
-  }
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
