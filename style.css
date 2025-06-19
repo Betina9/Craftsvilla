@@ -88,16 +88,16 @@ main {
 }
 
 .seksjon-tittel {
-  background-color: #0077cc;
-  color: white;
-  padding: 20px 0;
+  background-color: #73DF56;
+  color: #2E2E2E;
+  padding: 10px 0;
   text-align: center;
   width: 100%;
 }
 
 .seksjon-tittel h1 {
-  margin: 0;
   font-size: 28px;
+    margin: 0;
 }
 .skjema-container {
   background-color: white;
