@@ -1,3 +1,78 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  background-color: #4cb7a5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 350px;
+  width: 100%;
+  height: 90px;
+}
+
+#logo {
+  width: 120px;
+  margin-top: 5px;
+}
+
+.navbar {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 18px;
+  padding: 10px 20px;
+  
+  align-items: center;
+}
+
+.nav-btn {
+  background-color: #f3f7f9;
+  border-radius: 25px;
+  display: inline-block;
+  width: 120px;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  cursor: pointer;
+  color: #2E2E2E;
+  font-family: inherit;
+  font-size: 16px;
+  border: 2px solid #2E2E2E;
+  transition: background-color 0.2s ease;
+}
+
+.nav-btn:hover {
+  background-color: #bff3f7;
+}
+
+.nav-btn:visited {
+  color: #2E2E2E;
+}
+
+.hamburger {
+  font-size: 24px;
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger {
+  display: block;
+}
+.seksjon-tittel {
+  background-color: #73df56;
+  color: #2e2e2e;
+  padding: 10px 0;
+  text-align: center;
+  width: 100%;
+}
+
+.seksjon-tittel h1 {
+  font-size: 28px;
+  margin: 0;
+}
+
 footer {
   background-color: #f7a9a8;
   text-align: center;
