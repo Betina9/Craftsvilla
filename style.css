@@ -32,9 +32,14 @@ header {
   text-align: center;
   padding: 10px;
   text-decoration: none;
+  cursor: pointer;
 }
 .nav-btn:hover {
   background-color: #bff3f7;
+}
+
+.nav-btn:visited {
+  color: black;
 }
 
 .hamburger {
@@ -99,67 +104,6 @@ main {
   font-size: 28px;
   margin: 0;
 }
-.skjema-container {
-  background-color: white;
-  max-width: 600px;
-  margin: auto;
-  padding: 20px;
-  border: 2px solid #ccc;
-  border-radius: 10px;
-}
-
-h1 {
-  font-size: 24px;
-  padding: 5px;
-}
-
-em {
-  display: block;
-  font-style: italic;
-  margin-bottom: 20px;
-  padding: 10px;
-}
-
-label {
-  font-weight: bold;
-  display: block;
-  margin-top: 15px;
-}
-
-input[type="text"],
-input[type="email"] {
-  width: 100%;
-  padding: 8px;
-  margin-top: 5px;
-  box-sizing: border-box;
-  border: 1px solid #999;
-  border-radius: 4px;
-}
-
-.valgseksjon {
-  margin-top: 20px;
-  border: 1px solid #ccc;
-  padding: 15px;
-  border-radius: 5px;
-  background-color: #f9f9f9;
-}
-
-.valgseksjon label {
-  font-weight: normal;
-  display: block;
-  margin-bottom: 10px;
-}
-
-.valgseksjon input[type="checkbox"] {
-  margin-right: 10px;
-}
-
-.info-boks {
-  margin-top: 20px;
-  padding: 10px;
-  background-color: #eaf7ff;
-  font-weight: bold;
-}
 
 .pris {
   margin-top: 15px;
@@ -193,8 +137,3 @@ footer {
 .footer-link {
   color: black;
 }
-
-.wrapper {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
