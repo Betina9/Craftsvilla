@@ -1,3 +1,79 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  background-color: #4cb7a5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 350px;
+  width: 100%;
+}
+
+#logo {
+  width: 120px;
+  margin-top: 20px;
+}
+
+.navbar {
+  display: flex;
+  gap: 20px;
+  padding: 10px 20px;
+}
+
+.nav-btn {
+  background-color: #f3f7f9;
+  border-radius: 25px;
+  display: inline-block;
+  width: 120px;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+}
+.nav-btn:hover {
+  background-color: #bff3f7;
+}
+
+main {
+  background-color: #f3f7f9;
+  text-align: center;
+}
+
+.kort-seksjon {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 50px auto;
+  flex-wrap: wrap;
+  max-width: 1000px;
+}
+
+.kort {
+  background-color: white;
+  padding: 20px;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 250px;
+}
+
+.kort img {
+  width: 120px;
+  height: auto;
+  margin: 10px 0;
+}
+
+.kort h2 {
+  margin: 10px 0;
+}
+
+.kort p {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
 .seksjon-tittel {
   background-color: #0077cc;
   color: white;
@@ -72,10 +148,10 @@ input[type="email"] {
   font-weight: bold;
 }
 
-button {
+.pris {
   margin-top: 15px;
   padding: 10px 20px;
-  background-color: orange;
+  background-color: #ffd166;
   color: black;
   border: 1px solid #999;
   border-radius: 5px;
@@ -83,6 +159,6 @@ button {
   cursor: pointer;
 }
 
-button:hover {
-  background-color: darkorange;
+.pris:hover {
+  background-color: #f3a756;
 }
