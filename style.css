@@ -55,6 +55,7 @@ header {
 main {
   background-color: #f3f7f9;
   text-align: center;
+  font-family: "Times New Roman", Times, serif;
   flex: 1;
 }
 
@@ -85,10 +86,12 @@ main {
 
 .kort h2 {
   margin: 10px 0;
+  font-family: "Times New Roman", Times, serif;
 }
 
 .kort p {
   font-size: 14px;
+  font-family: "Times New Roman", Times, serif;
   margin-bottom: 15px;
 }
 
@@ -113,6 +116,7 @@ main {
   border: 1px solid #999;
   border-radius: 5px;
   font-size: 16px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   cursor: pointer;
 }
 
