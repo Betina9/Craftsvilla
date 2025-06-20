@@ -83,7 +83,7 @@ main {
 }
 
 .tilbakemelding-form {
-  background-color: #fff;
+  background-color: #f3f7f9;
   padding: 25px;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -113,8 +113,8 @@ textarea {
 }
 
 button {
-  background-color: #4cb7a5;
-  color: white;
+  background-color: #ffd166;
+  color: #2e2e2e;
   border: none;
   border-radius: 6px;
   padding: 12px;
@@ -129,7 +129,7 @@ button:hover {
 
 .anmeldelser {
   padding: 20px;
-  background-color: #eafff5;
+  background-color: #f3f7f9;
   border-radius: 10px;
 }
 
@@ -140,7 +140,7 @@ button:hover {
 }
 
 .anmeldelse {
-  background-color: white;
+  background-color: #f3f7f9;
   padding: 15px;
   border-radius: 6px;
   margin-bottom: 15px;
@@ -156,7 +156,7 @@ footer {
   width: 100%;
 }
 .footer-link {
-  color: black;
+  color: #2e2e2e;
 }
 
 .wrapper {

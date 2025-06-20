@@ -89,7 +89,7 @@ header {
 }
 
 .galleri-element {
-  background-color: white;
+  background-color: #F3F7F9;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   overflow: hidden;
@@ -130,7 +130,7 @@ footer {
   width: 100%;
 }
 .footer-link {
-  color: black;
+  color: #2E2E2E;
 }
 
 .wrapper {
